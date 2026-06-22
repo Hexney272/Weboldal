@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelForge | Weboldal Sablonok</title>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #0f0f23;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 24px;
+        }
+        .container { max-width: 700px; width: 100%; }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #f093fb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitle {
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+        .links { display: flex; flex-direction: column; gap: 16px; }
+        a {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 20px 24px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        a:hover {
+            border-color: rgba(102,126,234,0.5);
+            background: rgba(102,126,234,0.08);
+            transform: translateX(8px);
+        }
+        .icon { font-size: 2rem; }
+        .link-info h3 { font-size: 1.1rem; margin-bottom: 4px; }
+        .link-info p { font-size: 0.85rem; color: rgba(255,255,255,0.5); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PixelForge</h1>
+        <p class="subtitle">Freelance Webfejlesztő Starter Kit</p>
+        <div class="links">
+            <a href="./scroll-scrub-demo/">
+                <span class="icon">🎬</span>
+                <div class="link-info">
+                    <h3>Scroll Scrub Demo</h3>
+                    <p>Pinned video scrub effekt GSAP ScrollTrigger-rel</p>
+                </div>
+            </a>
+            <a href="./pixelforge-portfolio/">
+                <span class="icon">💼</span>
+                <div class="link-info">
+                    <h3>PixelForge Portfólió</h3>
+                    <p>Saját bemutatkozó oldal – glassmorphism, kék-lila</p>
+                </div>
+            </a>
+            <a href="./sablon-etterem/">
+                <span class="icon">🍽️</span>
+                <div class="link-info">
+                    <h3>Étterem Sablon</h3>
+                    <p>Ínyenc Bistro – digitális étlap, foglalás</p>
+                </div>
+            </a>
+            <a href="./sablon-szepsegszalon/">
+                <span class="icon">💅</span>
+                <div class="link-info">
+                    <h3>Szépségszalon Sablon</h3>
+                    <p>Glamour Studio – időpontfoglalás, csapat, árlista</p>
+                </div>
+            </a>
+            <a href="./sablon-autoszerelo/">
+                <span class="icon">🔧</span>
+                <div class="link-info">
+                    <h3>Autószerelő Sablon</h3>
+                    <p>TurboFix Garage – árajánlat kérés, szolgáltatások</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
