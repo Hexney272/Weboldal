@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ínyenc Bistro | Ahol az ízek találkoznak</title>
+    <meta name="description" content="Prémium éttermünkben a legfrissebb alapanyagokból készítjük fogásainkat. Foglaljon asztalt online!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Ínyenc<span>Bistro</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#etlap">Étlap</a></li>
+                <li><a href="#rolunk">Rólunk</a></li>
+                <li><a href="#galeria">Galéria</a></li>
+                <li><a href="#velemenyek">Vélemények</a></li>
+                <li><a href="#foglalas" class="btn btn-nav">Asztalfoglalás</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg-effects">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="glass-card hero-card">
+                <span class="badge">&#9733; 4.9 Google értékelés</span>
+                <h1>Ahol az <span class="gradient-text">ízek</span> találkoznak</h1>
+                <p>Hagyományos magyar és modern nemzetközi konyha, friss, helyi alapanyagokból. Fedezze fel az ízek világát egy igazán különleges környezetben.</p>
+                <div class="hero-buttons">
+                    <a href="#foglalas" class="btn btn-primary">Asztalfoglalás</a>
+                    <a href="#etlap" class="btn btn-ghost">Étlap megtekintése</a>
+                </div>
+                <div class="hero-info">
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <span>Budapest, Andrássy út 12.</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🕐</span>
+                        <span>H-V: 11:00 - 23:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Étlap -->
+    <section class="section" id="etlap">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Étlap</span>
+                <h2>Kedvenc fogásaink</h2>
+                <p>Séfünk ajánlatai a legfrissebb szezonális alapanyagokból</p>
+            </div>
+            <div class="menu-categories">
+                <button class="menu-tab active" data-category="all">Összes</button>
+                <button class="menu-tab" data-category="eloetel">Előétel</button>
+                <button class="menu-tab" data-category="foetel">Főétel</button>
+                <button class="menu-tab" data-category="desszert">Desszert</button>
+            </div>
+            <div class="menu-grid">
+                <div class="glass-card menu-item" data-category="eloetel">
+                    <div class="menu-item-header">
+                        <h3>Kacsamáj Mousse</h3>
+                        <span class="menu-price">3 200 Ft</span>
+                    </div>
+                    <p>Házi készítésű kacsamáj mousse, karamellizált hagymával és pirítós kenyérrel</p>
+                    <div class="menu-tags">
+                        <span>Gluténmentes opció</span>
+                    </div>
+                </div>
+                <div class="glass-card menu-item" data-category="eloetel">
+                    <div class="menu-item-header">
+                        <h3>Caprese Saláta</h3>
+                        <span class="menu-price">2 800 Ft</span>
+                    </div>
+                    <p>Friss mozzarella, koktélparadicsom, bazsalikommal és balzsamecettel</p>
+                    <div class="menu-tags">
+                        <span>Vegetáriánus</span>
+                    </div>
+                </div>
+                <div class="glass-card menu-item" data-category="foetel">
+                    <div class="menu-item-header">
+                        <h3>Bélszín Steak</h3>
+                        <span class="menu-price">7 900 Ft</span>
+                    </div>
+                    <p>200g marha bélszín, grillezett zöldségekkel és fűszervajas burgonyapürével</p>
+                    <div class="menu-tags">
+                        <span>Séf ajánlata</span>
+                    </div>
+                </div>
+                <div class="glass-card menu-item" data-category="foetel">
+                    <div class="menu-item-header">
+                        <h3>Mangalica Szűzpecsenye</h3>
+                        <span class="menu-price">6 400 Ft</span>
+                    </div>
+                    <p>Lassú tűzön sült mangalica szűz, aszalt szilvás szósszal és házi gnocchival</p>
+                    <div class="menu-tags">
+                        <span>Magyar konyha</span>
+                    </div>
+                </div>
+                <div class="glass-card menu-item" data-category="foetel">
+                    <div class="menu-item-header">
+                        <h3>Házi Tészta</h3>
+                        <span class="menu-price">4 200 Ft</span>
+                    </div>
+                    <p>Frissen készített tagliatelle, szarvasgombás tejszínes szósszal</p>
+                    <div class="menu-tags">
+                        <span>Vegetáriánus</span>
+                    </div>
+                </div>
+                <div class="glass-card menu-item" data-category="desszert">
+                    <div class="menu-item-header">
+                        <h3>Somlói Galuska</h3>
+                        <span class="menu-price">2 400 Ft</span>
+                    </div>
+                    <p>Klasszikus somlói galuska, házi tejszínhabbal és csokoládészósszal</p>
+                    <div class="menu-tags">
+                        <span>Klasszikus</span>
+                    </div>
+                </div>
+                <div class="glass-card menu-item" data-category="desszert">
+                    <div class="menu-item-header">
+                        <h3>Crème Brûlée</h3>
+                        <span class="menu-price">2 600 Ft</span>
+                    </div>
+                    <p>Vaníliás crème brûlée, karamellizált tetővel és friss bogyós gyümölcsökkel</p>
+                    <div class="menu-tags">
+                        <span>Gluténmentes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rólunk -->
+    <section class="section section-dark" id="rolunk">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Rólunk</span>
+                <h2>Történetünk</h2>
+            </div>
+            <div class="about-grid">
+                <div class="glass-card about-card">
+                    <div class="about-icon">👨‍🍳</div>
+                    <h3>15 év tapasztalat</h3>
+                    <p>Séfünk nemzetközi tapasztalattal és Michelin-csillagos éttermek hátterével rendelkezik.</p>
+                </div>
+                <div class="glass-card about-card">
+                    <div class="about-icon">🌿</div>
+                    <h3>Helyi alapanyagok</h3>
+                    <p>Kizárólag magyar termelőktől származó, friss, szezonális alapanyagokat használunk.</p>
+                </div>
+                <div class="glass-card about-card">
+                    <div class="about-icon">🍷</div>
+                    <h3>Válogatott borok</h3>
+                    <p>200+ féle bor a legjobb magyar és nemzetközi borászatoktól.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galéria -->
+    <section class="section" id="galeria">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Galéria</span>
+                <h2>Ízelítő a hangulatból</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="glass-card gallery-item" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <span>Belső tér</span>
+                </div>
+                <div class="glass-card gallery-item" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <span>Fogásaink</span>
+                </div>
+                <div class="glass-card gallery-item" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <span>Terasz</span>
+                </div>
+                <div class="glass-card gallery-item" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                    <span>Bárpult</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vélemények -->
+    <section class="section section-dark" id="velemenyek">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Vélemények</span>
+                <h2>Vendégeink mondják</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="glass-card testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Fantasztikus hely! Az ételek minősége kimagasló, a kiszolgálás figyelmes és kedves. Minden alkalommal visszatérünk."</p>
+                    <div class="testimonial-author">
+                        <strong>Szabó Anna</strong>
+                        <span>Google vélemény</span>
+                    </div>
+                </div>
+                <div class="glass-card testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"A bélszín steak egyszerűen tökéletes volt! A hangulat romantikus, ideális egy különleges vacsorához."</p>
+                    <div class="testimonial-author">
+                        <strong>Kiss Márton</strong>
+                        <span>TripAdvisor</span>
+                    </div>
+                </div>
+                <div class="glass-card testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"A legjobb étterem a környéken. A somlói galuska élmény volt, a borajánlás pedig tökéletes. Köszönjük!"</p>
+                    <div class="testimonial-author">
+                        <strong>Molnár Éva</strong>
+                        <span>Google vélemény</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Foglalás -->
+    <section class="section" id="foglalas">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Foglalás</span>
+                <h2>Foglaljon asztalt</h2>
+                <p>Töltse ki az alábbi űrlapot és visszaigazoljuk foglalását</p>
+            </div>
+            <div class="booking-grid">
+                <div class="glass-card booking-form-card">
+                    <form id="bookingForm" class="booking-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="bname">Név</label>
+                                <input type="text" id="bname" placeholder="Az Ön neve" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="bphone">Telefon</label>
+                                <input type="tel" id="bphone" placeholder="+36 30 123 4567" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="bdate">Dátum</label>
+                                <input type="date" id="bdate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="btime">Időpont</label>
+                                <select id="btime" required>
+                                    <option value="">Válasszon...</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="21:00">21:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="bguests">Vendégek száma</label>
+                                <select id="bguests" required>
+                                    <option value="">Hány fő?</option>
+                                    <option value="1">1 fő</option>
+                                    <option value="2">2 fő</option>
+                                    <option value="3">3 fő</option>
+                                    <option value="4">4 fő</option>
+                                    <option value="5">5 fő</option>
+                                    <option value="6">6+ fő</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="bemail">Email</label>
+                                <input type="email" id="bemail" placeholder="pelda@email.hu" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="bnote">Megjegyzés (opcionális)</label>
+                            <textarea id="bnote" rows="3" placeholder="Különleges kérés, allergia, évforduló..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Foglalás elküldése</button>
+                    </form>
+                </div>
+                <div class="booking-info">
+                    <div class="glass-card info-card">
+                        <h3>📍 Elérhetőség</h3>
+                        <p><strong>Cím:</strong> Budapest, Andrássy út 12.</p>
+                        <p><strong>Tel:</strong> +36 1 234 5678</p>
+                        <p><strong>Email:</strong> info@inyencbistro.hu</p>
+                    </div>
+                    <div class="glass-card info-card">
+                        <h3>🕐 Nyitvatartás</h3>
+                        <p>Hétfő - Csütörtök: 11:00 - 22:00</p>
+                        <p>Péntek - Szombat: 11:00 - 23:00</p>
+                        <p>Vasárnap: 11:00 - 21:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">Ínyenc<span>Bistro</span></a>
+                    <p>Ahol az ízek találkoznak</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#etlap">Étlap</a>
+                    <a href="#rolunk">Rólunk</a>
+                    <a href="#galeria">Galéria</a>
+                    <a href="#foglalas">Foglalás</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ínyenc Bistro. Minden jog fenntartva.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
