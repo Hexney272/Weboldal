@@ -26,13 +26,13 @@ function initScrollScrub() {
         start: 'top top',
         end: 'bottom bottom',
         pin: '.video-container',
-        scrub: true, // smooth scrub (true = 1 second smoothing)
+        scrub: 0.5, // smooth scrub (0.5 second smoothing for shorter videos)
         onUpdate: (self) => {
             // Set video currentTime based on scroll progress
             const time = self.progress * duration;
             
-            // Only update if the difference is significant (performance)
-            if (Math.abs(video.currentTime - time) > 0.05) {
+            // Update video frame (lower threshold for smoother short videos)
+            if (Math.abs(video.currentTime - time) > 0.01) {
                 video.currentTime = time;
             }
 
